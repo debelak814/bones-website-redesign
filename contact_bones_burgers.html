@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document as HTML5 and sets the language to English -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Sets the character encoding to UTF-8 for proper text rendering -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures the page is responsive and scales appropriately on different devices -->
+
+  <meta name="description"
+    content="Bones' Burgers Restaurant Contact Information - Cincinnati, Ohio - Voted Best Burger in Cincinnati">
+  <!-- Describes the page content for search engines -->
+
+  <meta name="keywords"
+    content="grass-fed beef, bones, cincinnati burger restaurant, curtis bonekemper, bones' burgers, parmesan fries, sweet potato fries, hamburger cheeseburger, cincinnati's favorite burger">
+  <!-- Adds relevant keywords for SEO -->
+
+  <meta name="robots" content="index,follow">
+  <!-- Instructs search engine crawlers to index and follow links on this page -->
+
+  <title>Contact Bones' Burgers</title>
+  <!-- Sets the title of the page displayed in the browser tab -->
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <!-- Links to a CSS file that resets browser styles -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Links to the main stylesheet for the page -->
+
+  <script src="js/script.js" async></script>
+  <!-- Links to a JavaScript file and loads it asynchronously -->
+</head>
+
+<body>
+  <!-- Body starts here -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- Provides a skip link for accessibility to allow users to bypass navigation -->
+
+  <div class="container">
+    <!-- Main container for the entire page layout -->
+
+    <header class="header">
+      <!-- Header section containing logo and navigation -->
+      <img src="images/logo.png" alt="Bones Burgers Logo" class="logo">
+      <!-- Displays the restaurant logo -->
+
+      <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+        <!-- Navigation menu with semantic role and ARIA label for accessibility -->
+        <ul class="site-nav-menu" data-menu-type="desktop">
+          <!-- Unordered list for navigation links -->
+          <li><a class="site-nav-link" href="index.html">Home</a></li>
+          <!-- Navigation link to the home page -->
+          <li><a class="site-nav-link" href="bones_burgers_menu.html">Menu</a></li>
+          <!-- Navigation link to the menu page -->
+          <li><a class="site-nav-link" href="contact_bones_burgers.html">Contact</a></li>
+          <!-- Navigation link to the contact page -->
+          <li><a class="site-nav-link" href="photo_gallery.html">Gallery</a></li>
+          <!-- Navigation link to the gallery page -->
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" role="main">
+      <!-- Main content area with semantic role for screen readers -->
+      <section class="contact-section">
+        <!-- Section containing the contact details -->
+        <div class="map-container">
+          <!-- Container for the embedded Google Map -->
+          <iframe
+            title="Google Map of Bones Burgers location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.8886727923525!2d-84.35039828463792!3d39.23001287952559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884045b4aa5f7b0d%3A0x7e2a4643c7a59a65!2s9721%20Montgomery%20Rd%2C%20Montgomery%2C%20OH%2045242%2C%20USA!5e0!3m2!1sen!2s!4v1700285074237!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <!-- Embeds an interactive Google Map for the restaurant location -->
+        </div>
+
+        <div class="contact-info-container">
+          <!-- Container for contact information -->
+          <h1>Contact Us</h1>
+          <!-- Heading for the contact section -->
+          <p><strong>Phone:</strong> <a href="tel:5134072939">(513) 407-2939</a></p>
+          <!-- Displays the phone number as a clickable link -->
+          <p><strong>Address:</strong> <a href="https://maps.app.goo.gl/DSrC88XPCKa19xNh6">9721 Montgomery Road, Montgomery, OH 45242 (Behind UDF)</a></p>
+          <!-- Displays the address with a clickable link to Google Maps -->
+          <p><strong>Facebook:</strong><span class="spacer"></span><a href="http://www.facebook.com/pages/Bones-Burgers/205353236171290" target="_blank">Bones’ Burgers</a></p>
+          <!-- Displays a link to the restaurant's Facebook page -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Footer section -->
+      <div class="footer-content">
+        <!-- Footer content container -->
+        <div class="info-container">
+          <!-- Container for contact and hours information -->
+          <section class="contact-info">
+            <!-- Contact information in the footer -->
+            <h2>Contact</h2>
+            <p><a href="5134072939" class="footer-link">(513) 407-2939</a></p>
+            <p><a href="https://maps.app.goo.gl/DSrC88XPCKa19xNh6" class="footer-link">9721 Montgomery Road,
+              Montgomery, OH 45242 (Behind UDF)</a></p>
+          </section>
+
+          <section class="hours">
+            <!-- Hours of operation -->
+            <h2>Hours</h2>
+            <p>Closed Monday</p>
+            <p>Tuesday - Thursday: 11:30 - 8:00</p>
+            <p>Friday: 11:30 - 9:00</p>
+            <p>Saturday: 12:00 - 9:00</p>
+            <p>Sunday: 4:00 - 8:00</p>
+          </section>
+        </div>
+
+        <div class="social-links">
+          <!-- Social media links -->
+          <a href="http://www.facebook.com/pages/Bones-Burgers/205353236171290" target="_blank">
+            <img src="images/facebook.png" alt="Facebook Icon">
+          </a>
+          <a href="http://x.com/BonesBurgers" target="_blank">
+            <img src="images/x.png" alt="Twitter Icon">
+          </a>
+        </div>
+
+        <p>© <span id="year"></span> Bones’ Burgers. All Rights Reserved.</p>
+        <!-- Copyright text dynamically updates the year -->
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      <!-- JavaScript to set the current year dynamically -->
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document as HTML5 and sets the language to English -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Sets the character encoding to UTF-8 for proper text rendering -->
+
+  <title>Bones Burgers</title>
+  <!-- Sets the title of the page displayed in the browser tab -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures the page is responsive and scales appropriately on different devices -->
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <!-- Links to a CSS file that resets browser styles -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Links to the main stylesheet for the page -->
+
+  <script src="js/script.js" async></script>
+  <!-- Links to a JavaScript file and loads it asynchronously -->
+</head>
+
+<body>
+  <!-- Body starts here -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- Provides a skip link for accessibility to allow users to bypass navigation -->
+
+  <div class="container">
+    <!-- Main container for the entire page layout -->
+
+    <header class="header">
+      <!-- Header section containing logo and navigation -->
+      <img src="images/logo.png" alt="Bones Burgers Logo" class="logo">
+      <!-- Displays the restaurant logo -->
+
+      <nav class="site-nav" role="navigation" aria-label="Main Navigation"></nav>
+      <!-- Navigation menu with semantic role and ARIA label for accessibility -->
+      <ul class="site-nav-menu" data-menu-type="desktop">
+        <!-- Unordered list for navigation links -->
+        <li>
+          <a class="site-nav-link" href="index.html">Home</a>
+          <!-- Navigation link to the home page -->
+        </li>
+        <li>
+          <a class="site-nav-link" href="bones_burgers_menu.html">Menu</a>
+          <!-- Navigation link to the menu page -->
+        </li>
+        <li>
+          <a class="site-nav-link" href="contact_bones_burgers.html">Contact</a>
+          <!-- Navigation link to the contact page -->
+        </li>
+        <li>
+          <a class="site-nav-link" href="photo_gallery.html">Gallery</a>
+          <!-- Navigation link to the gallery page -->
+        </li>
+      </ul>
+    </header>
+
+    <main id="main-content" role="main">
+      <!-- Main content area with semantic role for screen readers -->
+
+      <section class="gallery-with-benefits">
+        <!-- Section for the gallery with accompanying information -->
+        <div class="image-container">
+          <img src="images/storefront.jpg" alt="Bones Burgers storefront in Montgomery, Ohio">
+          <!-- Displays an image of the restaurant's storefront -->
+        </div>
+
+        <div>
+          <section class="about-section">
+            <!-- Section providing information about the restaurant -->
+            <h1>About Bones’ Burgers</h1>
+            <p>When I started to think about opening a restaurant, the obvious choice for me was to provide not only
+              good food but food that is also good for you… and just as important to use locally-sourced ingredients
+              whenever possible. For that reason, we are proud to support our local food growers and products.</p>
+            <!-- Owner's statement about the philosophy behind the restaurant -->
+            <p>Bones’ Burgers – the restaurant is the culmination of six years operating Bones’ Burgers mobile food
+              truck throughout the Greater Cincinnati area.</p>
+            <!-- Background about transitioning from a food truck to a restaurant -->
+            <p>My sincere thanks go to the countless number of loyal customers who have made our burgers and other
+              products so popular.</p>
+            <!-- Acknowledgment of customer support -->
+            <p><strong>Enjoy, Bones</strong></p>
+            <!-- Signature from the owner -->
+          </section>
+        </div>
+      </section>
+
+      <section class="health-benefits">
+        <!-- Section highlighting the health benefits of grass-fed beef -->
+        <h1>Health Benefits of Grass-Fed Beef</h1>
+        <p>Meat, eggs, and dairy products from pastured animals are ideal for your health. Compared with commercial
+          products, they offer you more "good" fats and fewer "bad" fats. They are richer in antioxidants including
+          vitamins E, beta-carotene, and vitamin C. Furthermore, they do not contain traces of added hormones,
+          antibiotics, or other drugs.</p>
+        <!-- Explanation of the nutritional advantages of grass-fed beef -->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Footer section -->
+      <div class="footer-content">
+        <!-- Footer content container -->
+
+        <div class="info-container">
+          <!-- Container for contact and hours information -->
+
+          <section class="contact-info">
+            <!-- Contact information in the footer -->
+            <h2>Contact</h2>
+            <p><a href="5134072939" class="footer-link">(513) 407-2939</a></p>
+            <!-- Displays the phone number as a clickable link -->
+            <p><a href="https://maps.app.goo.gl/DSrC88XPCKa19xNh6" class="footer-link">9721 Montgomery Road,
+                Montgomery, OH 45242 (Behind UDF)</a></p>
+            <!-- Displays the address with a clickable link to Google Maps -->
+          </section>
+
+          <section class="hours">
+            <!-- Hours of operation -->
+            <h2>Hours</h2>
+            <p>Closed Monday</p>
+            <p>Tuesday - Thursday: 11:30 - 8:00</p>
+            <p>Friday: 11:30 - 9:00</p>
+            <p>Saturday: 12:00 - 9:00</p>
+            <p>Sunday: 4:00 - 8:00</p>
+          </section>
+        </div>
+
+        <div class="social-links">
+          <!-- Social media links -->
+          <a href="http://www.facebook.com/pages/Bones-Burgers/205353236171290" target="_blank">
+            <img src="images/facebook.png" alt="Facebook Icon">
+          </a>
+          <!-- Link to the restaurant's Facebook page -->
+          <a href="http://x.com/BonesBurgers" target="_blank">
+            <img src="images/x.png" alt="Twitter Icon">
+          </a>
+          <!-- Link to the restaurant's X (formerly Twitter) page -->
+        </div>
+
+        <p>© <span id="year"></span> Bones’ Burgers. All Rights Reserved.</p>
+        <!-- Copyright text dynamically updates the year -->
+      </div>
+
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      <!-- JavaScript to set the current year dynamically -->
+    </footer>
+  </div>
+</body>
+
+</html>
