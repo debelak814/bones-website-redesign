@@ -2,9 +2,34 @@
 
 # Adding HTML or Custom Code to Your Website Using GoDaddy
 
-This guide explains how to add HTML or custom code to your website using the GoDaddy Website Builder.
+This guide explains how to add HTML or custom code to your website using the GoDaddy Website Builder and how to work with files from a GitHub repository.
 
-## Steps to Add HTML or Custom Code
+## Exporting Files From a GitHub Repository
+
+If you want to export files from a GitHub repository for use in your project, follow these steps:
+
+1. **Clone or Download the Repository**  
+   - Navigate to the repository on GitHub.
+   - Click on the green **Code** button.
+   - Select **Download ZIP** to download the entire repository as a ZIP file, then extract it to your local machine.  
+
+2. **Clone the Repository (Optional)**  
+   - If you have Git installed, you can clone the repository to your local machine using the following command:
+     ```bash
+     git clone <repository-url>
+     ```
+   - Replace `<repository-url>` with the URL of the repository you want to clone.
+
+3. **Export Specific Files (Optional)**  
+   - To export individual files, navigate to the file in the repository.  
+   - Click on the file name to open it, then click the **Raw** button.  
+   - Right-click and select **Save As** to download the file to your local machine.
+
+4. **Use the Files in Your Project**  
+   - Add the exported files (e.g., HTML, CSS, JavaScript) to your project directory.
+   - Ensure that your file paths are correct when referencing these files in your project.
+
+## Steps to Add HTML or Custom Code to Your GoDaddy Website
 
 1. **Log in to Your GoDaddy Account**  
    Access your GoDaddy account and navigate to the Website Builder dashboard.
@@ -30,4 +55,4 @@ This guide explains how to add HTML or custom code to your website using the GoD
 - Test your code before adding it to ensure it functions correctly.  
 - Be mindful of how custom code interacts with your website's existing design and features.  
 
-For more details, refer to GoDaddy's [official guide](https://www.godaddy.com/help/add-html-or-custom-code-to-my-site-27252).
+For more details, refer to GoDaddy's [official guide](https://www.godaddy.com/help/add-html-or-custom-code-to-my-site-27252) or GitHub's [documentation](https://docs.github.com/en).
