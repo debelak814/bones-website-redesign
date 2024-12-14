@@ -1,8 +1,8 @@
 # bones-website-redesign
 
-# Adding HTML or Custom Code to Your Website Using GoDaddy
+# How to Pull Files from This Website and Upload Them to GoDaddy
 
-This guide explains how to add HTML or custom code to your website using the GoDaddy Website Builder and how to work with files from a GitHub repository.
+This guide explains how to pull files from this website and upload them to your GoDaddy Website Builder to customize your website with HTML or custom code.
 
 ## Exporting Files From a GitHub Repository
 
